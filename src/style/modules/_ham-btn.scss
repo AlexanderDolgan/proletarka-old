@@ -1,0 +1,14 @@
+.ham-btn {
+  & > button {
+    padding: 1em .75em;
+    border: none;
+    outline: none;
+    background-color: inherit;
+  }
+}
+
+@include susy-breakpoint($b-medium,12) {
+  .ham-btn {
+    display: none;
+  }
+}

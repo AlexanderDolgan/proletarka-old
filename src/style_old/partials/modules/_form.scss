@@ -1,0 +1,72 @@
+//contact form
+
+.contact-form-wrapper {
+  @include container($container-width);
+  background-color: $white;
+  padding: 1.5em;
+}
+
+.contact-form {
+  &__header {
+    margin: 1em 0;
+  }
+  &__label {
+
+  }
+  &__input {
+
+  }
+  &__textarea {
+
+  }
+  &__send-btn {
+    color: $white;
+    background-color: $primary-color;
+  }
+}
+
+@include susy-breakpoint($b-small, 12) {
+  .contact-form {
+    &__header {
+
+    }
+    &__label {
+
+    }
+    &__input {
+      width: span(12);
+    }
+    &__textarea {
+      width: span(12);
+      min-height: 200px;
+    }
+    &__send-btn {
+
+    }
+  }
+}
+
+@include susy-breakpoint($b-medium, 12) {
+  .contact-form-wrapper {
+    text-align: center;
+  }
+
+  .contact-form {
+    &__header {
+      margin: 1em 0;
+    }
+    &__label {
+
+    }
+    &__input {
+      width: span(10);
+    }
+    &__textarea {
+      width: span(10);
+      min-height: 200px;
+    }
+    &__send-btn {
+
+    }
+  }
+}

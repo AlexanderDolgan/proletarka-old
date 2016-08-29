@@ -1,0 +1,21 @@
+.card {
+  margin-top: 1.5em;
+}
+
+.card-small {
+  &__left {
+    @include span(4);
+  }
+  &__right {
+    @include span(last 4);
+  }
+}
+
+.card-large {
+  &__left {
+    @include span(8);
+  }
+  &__right {
+    @include span(last 8);
+  }
+}

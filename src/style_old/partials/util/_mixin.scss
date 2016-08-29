@@ -1,0 +1,25 @@
+/// Transfers the colors in the `$color-palette` variable into the legacy color variables, such as `$primary-color` and `$secondary-color`.
+@mixin add-brand-colors() {
+  @if map-has-key($brand-palette, primary) {
+    $primary-color: map-get($brand-palette, primary) !global;
+  }
+  @if map-has-key($brand-palette, secondary) {
+    $secondary-color: map-get($brand-palette, secondary) !global;
+  }
+  @if map-has-key($brand-palette, success) {
+    $success-color: map-get($brand-palette, success) !global;
+  }
+  @if map-has-key($brand-palette, warning) {
+    $warning-color: map-get($brand-palette, warning) !global;
+  }
+  @if map-has-key($brand-palette, alert) {
+    $alert-color: map-get($brand-palette, alert) !global;
+  }
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

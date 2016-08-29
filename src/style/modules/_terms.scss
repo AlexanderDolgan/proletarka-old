@@ -1,0 +1,18 @@
+.terms {
+  margin-top: 4.5em;
+  color: $white;
+  &__header {
+    color: $white;
+    text-align: center;
+  }
+  &__content {
+    text-align: justify;
+  }
+}
+
+@include susy-breakpoint($b-medium) {
+  .terms__content {
+    @include span(8);
+    @include push(2);
+  }
+}

@@ -1,0 +1,55 @@
+//content block
+.container {
+  @include container($container-width);
+  position: relative;
+  overflow: hidden;
+  padding: 1em;
+  background-color: $white;
+}
+
+.container-fluid {
+  @extend .container;
+  @include container();
+}
+
+@include susy-breakpoint($b-small, 12) {
+  //content article
+  .container {
+    &__bgimg {
+      display: none;
+    }
+  }
+}
+
+@include susy-breakpoint($b-medium, 12) {
+
+
+
+  //main content bg contacts page
+  .adress-bg {
+    background-image: url("../img/assets/contacts_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .investors-bg {
+    background-image: url("../img/assets/contacts_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@include susy-breakpoint($b-large, 12) {
+
+  //content article
+  .container {
+    &__bgimg {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: -1;
+    }
+  }
+}

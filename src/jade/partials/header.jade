@@ -1,0 +1,19 @@
+//Site header
+header#site-header.is-white
+	//top-panel
+	.l-top-panel
+		//hamburger btn for mobile
+		.ham-btn
+			button(type="button").sec-menu-btn
+				span.fi-list  Sections
+
+		//logo
+		.text-logo
+			a(href="index.html").text-logo__link
+				img.text-logo__img(src="../img/assets/logo-color.svg")
+
+		//navigation
+		nav.nav.top-nav
+			span.centerer
+			each val in ['Home', 'Investment', 'Structure', 'Investors', 'Contacts']
+				a.nav__link.top-nav__link(href= val + ".html")= val

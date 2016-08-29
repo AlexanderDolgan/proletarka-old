@@ -1,0 +1,107 @@
+//@include normalize();
+
+*, *+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $global-font-size;
+  font-family: $global-font-family;
+  line-height: $global-line-height;
+  background-color: $body-background;
+  -webkit-font-smoothing: $font-smooth;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($primary-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+//Address
+address {
+  font-style: normal;
+}
+
+// Paragraphs
+p {
+  line-height: $paragraph-lineheight;
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  color: $header-color;
+  line-height: $header-lineheight;
+}
+
+//Bloquote
+blockquote {
+  background: #f9f9f9;
+  border-left: 3px solid $primary-color;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: $primary-color;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+//end Bloquote
+
+dd {
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: .5em 1em;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  background-color: $light-gray;
+  &:active, &:focus {
+    background-color: $white;
+  }
+}
+
+textarea {
+  padding: 10px 15px;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  background-color: $light-gray;
+  &:active, &:focus {
+    background-color: $white;
+  }
+}
+
+button {
+  outline: none;
+}

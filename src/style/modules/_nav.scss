@@ -1,0 +1,64 @@
+.nav {
+  &__link {
+    display: block;
+    &:hover {
+      color: darken($primary-color, 15%);
+      text-decoration: underline;
+    }
+  }
+}
+
+.top-nav {
+  display: none;
+  text-align: center;
+  &__link {
+    padding: .5em 1em;
+    &:last-child {
+    }
+  }
+}
+
+.footer-nav {
+  display: none;
+}
+
+@include susy-breakpoint($b-medium) {
+  .top-nav {
+    height: 5em;
+    display: block;
+    @include span(last 9);
+    text-align: right;
+    &__link {
+      display: inline-block;
+
+      vertical-align: middle;
+    }
+    .centerer {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+@include susy-breakpoint($b-large) {
+  .footer-nav {
+    display: block;
+    @include span(3);
+    &__header {
+      color: $light-gray;
+      &::after {
+        content: '';
+        display: block;
+        margin-top: .5em;
+        width: 50%;
+        height: .05em;
+        background-color: $primary-color;
+      }
+    }
+    &__link {
+      color: $light-gray;
+    }
+  }
+
+}

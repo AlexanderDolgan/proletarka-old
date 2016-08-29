@@ -1,0 +1,29 @@
+.nav {
+  display: none;
+}
+
+//hamburger menu btn
+.ham-btn {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+@include susy-breakpoint($b-medium, 12) {
+  .top-panel {
+    &__s-logo {
+      display: block;
+      @include span(3);
+      max-width: 200px;
+    }
+    &__nav {
+      @include span(9 last);
+      display: block;
+      text-align: right;
+    }
+    &__ham-btn {
+      display: none;
+    }
+  }
+}

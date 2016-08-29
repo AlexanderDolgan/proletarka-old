@@ -1,0 +1,50 @@
+.article {
+  padding: 2.5em 0;
+  @include susy-clearfix;
+  &__content {
+    text-align: justify;
+    margin-top: 1.5em;
+    @include susy-clearfix;
+  }
+}
+
+.article__hgroup::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: .15em;
+  background-color: $primary-color;
+}
+
+.hgroup-h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.dl-index {
+  font-size: .9em;
+  dt {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 1.5em;
+  }
+}
+
+
+@include susy-breakpoint($b-medium){
+  .left-col {
+    @include span(4);
+    @include push(1.5);
+  }
+
+  .right-col {
+    @include span(4 last);
+    @include post(1.5);
+  }
+}
+
+@include susy-breakpoint($b-large) {
+
+}
+

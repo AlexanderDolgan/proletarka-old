@@ -1,0 +1,46 @@
+main#site-main.adress-bg
+	//contacts main section
+	.container
+		section.adress
+			img.adress__map(src="../img/assets/map.jpg" alt="map")
+			.office-adress__block
+				ul.office-adress__item.office-adress__item__black
+					li: h2 Luxenburg
+					li: a(href="#"): <i class="fi-home"></i> 127 Rue de Mühlenbach L.2168
+					li: a(href="mailto:info@heritageproperties.lu"): <i class="fi-mail"></i> info@heritageproperties.lu
+					li: a(href="tel:+352026782626"): <span class="accent">CALL US:</span>+352 (0) 2678 2626
+
+		section.adress
+			img.adress__map(src="../img/assets/map.jpg" alt="map")
+			.office-adress__block
+				ul.office-adress__item.office-adress__item__black
+					li: h2 Paris
+					li: a(href="#"): <i class="fi-home"></i> 127 Rue de Mühlenbach L.2168
+					li: a(href="mailto:info@heritageproperties.lu"): <i class="fi-mail"></i> info@heritageproperties.lu
+					li: a(href="tel:+352026782626"): <span class="accent">CALL US:</span>+352 (0) 2678 2626
+
+		section.adress
+			img.adress__map(src="../img/assets/map.jpg" alt="map")
+			.office-adress__block
+				ul.office-adress__item.office-adress__item__black
+					li: h2 Dusseldorf
+					li: a(href="#"): <i class="fi-home"></i> 127 Rue de Mühlenbach L.2168
+					li: a(href="mailto:info@heritageproperties.lu"): <i class="fi-mail"></i> info@heritageproperties.lu
+					li: a(href="tel:+352026782626"): <span class="accent">CALL US:</span>+352 (0) 2678 2626
+
+		section.container.contact-form-wrapper
+			form(method='post').contact-form
+				section
+					h1.contact-form__header Contact Us
+					p
+						input(type='email' id='name' name='name' placeholder='Please enter your e-mail adress').contact-form__input
+					p
+						label(for='message').contact-form__label
+					p
+						textarea(id='message' name='message' placeholder='Message').contact-form__textarea
+
+				section
+					button(type='button' name='sendbtn' id='send-btn').contact-form__send-btn Send
+
+
+
