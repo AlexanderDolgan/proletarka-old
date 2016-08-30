@@ -1,29 +1,40 @@
-.hide {
+.is-hide {
   display: none;
 }
 
-.show {
+.is-show {
   display: block;
 }
 
-.accent {
-  font-weight: bold;
-  color: $primary-color;
-}
-
-.showing {
+//class for hero slider
+.is-showing {
   opacity: 1;
   z-index: 2;
 }
 
-.color-white {
-  color: white;
-}
-
-.bg-black {
+.is-black {
   background-color: $dark-black;
 }
 
-.box-shadow {
-  box-shadow: 0 0 1em rgba(0,0,0,.2);
+
+.is-black-trans {
+  background-color: rgba(0,0,0,1);
+}
+
+.is-white {
+  background-color: $white;
+}
+
+.is-text-white {
+  color: $white;
+}
+
+.is-accent {
+  font-weight: 700;
+}
+
+@include susy-breakpoint($b-medium, 12) {
+  .is-black-trans {
+    background-color: rgba(0,0,0,.65);
+  }
 }

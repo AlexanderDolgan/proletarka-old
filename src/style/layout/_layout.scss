@@ -3,47 +3,13 @@
 }
 
 #site-header {
-  position: absolute;
-  width: 100%;
-  z-index: 4;
-  box-shadow: 0 0 .5em rgba(0,0,0,.3);
-}
 
-.l-top-panel {
-  @include container();
-  padding: 0 .75em;
-}
-
-.l-hero {
-  @include container(auto);
-  position: relative;
-  height: 100%;
 }
 
 #site-main {
-  @include container();
-  position: relative;
-  &::after {
-    content: '';
-    display: block;
-    height: 500px;
-    opacity: .5;
-    background-image: url("../img/assets/london_bg.jpg");
-    background-position: center bottom;
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
+
 }
 
-.l-footer {
-  @include container();
-  padding: 2.5em 0;
-}
-
-.row {
-  @include susy-clearfix;
-  padding: 0 1.5em;
-}
-
-@include susy-breakpoint($b-large) {
+.container {
+  @include container($container-width);
 }

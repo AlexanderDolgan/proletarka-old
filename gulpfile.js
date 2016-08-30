@@ -31,7 +31,6 @@ var path = {
         jade: 'build/',
         js: 'build/js/',
         css: 'build/style',
-        foundjs: 'build/js/'
     },
     //source paths
     src: {
@@ -40,7 +39,6 @@ var path = {
         //html: 'src/*.html',
         jade: 'src/jade/*.jade',
         js: 'src/js/*.js',
-        foundjs: 'bower_components/foundation-sites/js/foundation.',
         css: 'src/style/*.scss'
     },
     //whatcher paths
@@ -94,51 +92,11 @@ gulp.task('js:build', function () {
         .pipe(sourcemaps.init())
         .pipe(rigger())
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())  //throw error when connect foundation core js files
+        .pipe(uglify())
         .pipe(sourcemaps.write('../js'))
         .pipe(gulp.dest(path.build.js))
         .on('error', function(err) { gutil.log(err.message); })
         .pipe(reload({stream: true}));
-});
-
-// JSHint, concat, and minify Foundation JavaScript
-gulp.task('foundation-js:build', function () {
-    return gulp.src([
-
-            // Foundation core - needed if you want to use any of the components below
-            path.src.foundjs + 'core.js',
-            path.src.foundjs + 'util.*.js',
-
-            // Pick the components you need in your project
-            path.src.foundjs + 'abide.js',
-            path.src.foundjs + 'accordion.js',
-            path.src.foundjs + 'accordionMenu.js',
-            path.src.foundjs + 'drilldown.js',
-            path.src.foundjs + 'dropdown.js',
-            path.src.foundjs + 'dropdownMenu.js',
-            path.src.foundjs + 'equalizer.js',
-            path.src.foundjs + 'interchange.js',
-            path.src.foundjs + 'magellan.js',
-            path.src.foundjs + 'offcanvas.js',
-            path.src.foundjs + 'orbit.js',
-            path.src.foundjs + 'responsiveMenu.js',
-            path.src.foundjs + 'responsiveToggle.js',
-            path.src.foundjs + 'reveal.js',
-            path.src.foundjs + 'slider.js',
-            path.src.foundjs + 'sticky.js',
-            path.src.foundjs + 'tabs.js',
-            path.src.foundjs + 'toggler.js',
-            path.src.foundjs + 'tooltip.js'
-        ])
-        .pipe(babel({
-            compact: true
-        }))
-        .pipe(sourcemaps.init())
-        .pipe(concat('foundation.js'))
-        .pipe(rename({suffix: '.min'}))
-        //.pipe(uglify())//dosesn't work =/
-        .pipe(sourcemaps.write(path.build.foundjs)) // Creates sourcemap for minified Foundation JS
-        .pipe(gulp.dest(path.build.foundjs))
 });
 
 gulp.task('style:build', function () {
@@ -181,8 +139,7 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'image:build',
-    'fonts:build',
-    'foundation-js:build'
+    'fonts:build'
 ]);
 
 gulp.task('watch', function () {

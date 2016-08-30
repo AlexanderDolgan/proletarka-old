@@ -1,19 +1,14 @@
 //Site header
-header#site-header.is-white
-	//top-panel
-	.l-top-panel
-		//hamburger btn for mobile
-		.ham-btn
-			button(type="button").sec-menu-btn
-				span.fi-list  Sections
-
-		//logo
-		.text-logo
-			a(href="index.html").text-logo__link
-				img.text-logo__img(src="../img/assets/logo-color.svg")
-
-		//navigation
+header#site-header.is-black
+	.container
 		nav.nav.top-nav
-			span.centerer
-			each val in ['Home', 'Investment', 'Structure', 'Investors', 'Contacts']
-				a.nav__link.top-nav__link(href= val + ".html")= val
+			each val in ['Печати','Штампы', 'Пломбиры', 'Визитки', 'Самокопирка', 'Открытки/Брошюры', 'Таблички']
+				a.top-nav__link= val
+		.hero
+			hgroup.hero__title
+				h1 Печати.Штампы.Полиграфия
+				h3 <i class="metro"></i> Пролетарская
+		.contacts
+			a(href='#') <i class="point"></i> ул. 1-я Дубровская, д. 1, корп. 2
+			a(href='tel:+79684335358')<i class="phone"></i> +7 (495) 123-6553; +7 (968) 433-53-58
+			a(href='mailto:proletarka2004@yandex.ru')<i class="email"></i> proletarka2004@yandex.ru
