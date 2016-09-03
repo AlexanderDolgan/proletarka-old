@@ -1,0 +1,14 @@
+.hor-contacts {
+  text-align: center;
+  line-height: 3.5;
+  background-color: white;
+  & a {
+    display: inline-block;
+    color: $black;
+    margin-right: 3em;
+    font-size: .9em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -3,7 +3,16 @@
 }
 
 #site-header {
-
+  position: relative;
+  & > .noise {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-image: url("../img/assets/noise-nav.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    z-index: 1;
+  }
 }
 
 #site-main {
@@ -12,4 +21,9 @@
 
 .container {
   @include container($container-width);
+  @include susy-clearfix;
+}
+
+.l-card-holder {
+  padding: 5em 0;
 }

@@ -1,0 +1,7 @@
+.cat-card {
+  position: relative;
+  @include gallery(4 of 12);
+  margin-bottom: gutter(12);
+  height: 200px;
+  background-color: #1a2c51;
+}

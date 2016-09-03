@@ -1,22 +1,24 @@
 @import "mixin";
 
 //Global
-$global-font-family: 'Open Sans', serif;
+$global-font-family: 'Roboto', serif;
+$second-font-family: 'Open Sans', serif;
 $global-font-size: 110%;
 $global-line-height: 1.7;
 $font-smooth: antialiased;
 
 //Colors
 $brand-palette: (
-        primary: #BF382A, // primary red
-        secondary: #683531, // darken red
-        third: #EF7079, // lighten red
-        fourth: #F7E8C3, // bege
+        primary: #BF382A,
+        secondary: #683531,
         success: #3adb76,
         warning: #ffae00,
         alert: #ec5840
 );
 
+$third-color: #EF7079; // light red
+$fourth-color: #F7E8C3; //bege
+$fifth-color: #FCFAED; ///light bege
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -35,7 +37,7 @@ $base-spacing: 1em;
 
 $b-small: 0;
 $b-medium: 48em;
-$b-large: 75em;
+$b-large: 64em;
 $b-xlarge: 90em;
 $b-xxlarge: 100em;
 
@@ -51,7 +53,7 @@ $container-width: $b-large;
 $paragraph-lineheight: 1.7;
 $paragraph-margin-bottom: 1.5em;
 
-$header-font-family: $global-font-family;
+$header-font-family: 'Merriweather', sans-serif;
 $header-font-weight: 400;
 $header-color: $body-font-color;
 $header-lineheight: 1.4;

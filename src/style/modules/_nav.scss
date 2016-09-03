@@ -1,15 +1,21 @@
-.top-nav {
+.hor-nav {
   text-align: center;
   &__link {
-    color: $white;
+    font-family: $second-font-family;
     display: inline-block;
-    padding: 1em;
+    font-weight: 700;
+    padding: 2em 1em 0 2em;
+    color: $fifth-color;
+    font-size: .9em;
     &:hover,
     &:active,
     &:focus {
-      color: $primary-color;
-      text-decoration: none;
+      color: darken($fifth-color,3%);
+      text-decoration: underline;
       cursor: pointer;
+    }
+    &:last-child {
+      padding-right: 0;
     }
   }
 }

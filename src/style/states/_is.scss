@@ -1,3 +1,4 @@
+//actions
 .is-hide {
   display: none;
 }
@@ -6,35 +7,48 @@
   display: block;
 }
 
-//class for hero slider
-.is-showing {
-  opacity: 1;
-  z-index: 2;
-}
-
-.is-black {
-  background-color: $dark-black;
-}
-
-
-.is-black-trans {
-  background-color: rgba(0,0,0,1);
-}
-
-.is-white {
-  background-color: $white;
-}
-
 .is-text-white {
   color: $white;
 }
 
+// content backgrounds
+
+.is-white-bg {
+  background-color: $light-gray;
+}
+
+.is-black-bg {
+  background-color: $dark-black;
+}
+
+.is-black-trans {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.is-dust {
+  background-image: url("../img/assets/noise.png");
+}
+
+.is-light {
+  background-color: $fifth-color; //light bege
+}
+
+.is-dark {
+  background-color: $primary-color; //light bege
+}
+
+.is-dark-grad {
+  background-image: linear-gradient(-45deg, rgb(252, 250, 237) 0%,
+          rgb(252, 250, 237) 10%, rgb(191, 57, 42) 10%, rgb(191, 57, 42) 90%, rgb(252, 250, 237) 90%, rgb(252, 250, 237) 100%);
+}
+
+//text decorations
 .is-accent {
   font-weight: 700;
 }
 
 @include susy-breakpoint($b-medium, 12) {
   .is-black-trans {
-    background-color: rgba(0,0,0,.65);
+    background-color: rgba(0, 0, 0, .65);
   }
 }
