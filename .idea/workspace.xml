@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a46bc8c5-e925-4614-acdd-95e24ae4c0b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/assets/gal-stamp.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/main.min.js" afterPath="$PROJECT_DIR$/build/js/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/main.min.js.map" afterPath="$PROJECT_DIR$/build/js/main.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/main.min.css" afterPath="$PROJECT_DIR$/build/style/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/main.min.css.map" afterPath="$PROJECT_DIR$/build/style/main.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jade/partials/header.jade" afterPath="$PROJECT_DIR$/src/jade/partials/header.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jade/partials/main-index.jade" afterPath="$PROJECT_DIR$/src/jade/partials/main-index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/partials/app.js" afterPath="$PROJECT_DIR$/src/js/partials/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/base/_base.scss" afterPath="$PROJECT_DIR$/src/style/base/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/modules/_cards.scss" afterPath="$PROJECT_DIR$/src/style/modules/_cards.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/modules/_contacts.scss" afterPath="$PROJECT_DIR$/src/style/modules/_contacts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/states/_is.scss" afterPath="$PROJECT_DIR$/src/style/states/_is.scss" />
     </list>
     <ignored path="Heritage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-index.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-index.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jade/partials/main-index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -66,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_cards.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_cards.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/modules/_cards.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -119,8 +108,8 @@
       <file leaf-file-name="header.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jade/partials/header.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="60">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -195,13 +184,13 @@
         <option value="$PROJECT_DIR$/src/style/modules/_index.scss" />
         <option value="$PROJECT_DIR$/src/style/util/_settings.scss" />
         <option value="$PROJECT_DIR$/src/style/layout/_layout.scss" />
-        <option value="$PROJECT_DIR$/src/jade/partials/header.jade" />
         <option value="$PROJECT_DIR$/src/js/partials/app.js" />
         <option value="$PROJECT_DIR$/src/style/base/_base.scss" />
         <option value="$PROJECT_DIR$/src/style/states/_is.scss" />
         <option value="$PROJECT_DIR$/src/style/modules/_contacts.scss" />
-        <option value="$PROJECT_DIR$/src/jade/partials/main-index.jade" />
         <option value="$PROJECT_DIR$/src/style/modules/_cards.scss" />
+        <option value="$PROJECT_DIR$/src/jade/partials/header.jade" />
+        <option value="$PROJECT_DIR$/src/jade/partials/main-index.jade" />
       </list>
     </option>
   </component>
@@ -278,10 +267,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="623" />
-    <option name="y" value="226" />
-    <option name="width" value="1188" />
-    <option name="height" value="773" />
+    <option name="y" value="83" />
+    <option name="width" value="1280" />
+    <option name="height" value="654" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -404,7 +392,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="con&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/modules/_contacts.scss&#10;is&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/states/_is.scss&#10;head&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/partials/header.jade&#10;base&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/base/_base.scss&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/util/_settings.scss&#10;se&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/base/_base.scss&#10;la&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/layout/_layout.scss&#10;nav&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/modules/_nav.scss&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/index.jade&#10;lay&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/layout/_layout.scss&#10;hero&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/modules/_hero.scss&#10;states&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style_old/partials/states/_states.scss&#10;mixi&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/util/_mixin.scss&#10;mix&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/util/_mixin.scss&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/index.jade&#10;article&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/modules/_article.scss&#10;mai&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/jade/partials/main-index.jade&#10;app&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/js/partials/app.js&#10;setting&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/util/_settings.scss&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_footer.scss&#10;baw&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/node_modules/easy-extender/node_modules/lodash/internal/baseWhile.js&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_header-hero.scss&#10;ar&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_article.scss&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/jade/partials/header-index.jade&#10;util&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/bower_components/foundation-sites/scss/util/_util.scss&#10;var&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/util/_var.scss&#10;ыуее&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/util/_settings.scss&#10;a&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/js/partials/app.js&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_form.scss&#10;adress&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_adress-block.scss&#10;content&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_content-block.scss&#10;install node&#9;null&#9;null&#10;settings&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style_old/partials/_settings.scss&#10;modules&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_modules.scss&#10;modul&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_modules.scss&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/main.scss&#10;ut&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/_utilities.scss&#10;large&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/large.scss&#10;med&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/medium.scss&#10;small&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/small.scss&#10;main.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/js/main.js&#10;foundation-icons&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/foundation-icons.scss&#10;ma&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/main.scss&#10;_setting&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/_settings.scss&#10;larg&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/large.scss&#10;_settings&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/_settings.scss&#10;gulp&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/partials/header.jade&#10;con&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/modules/_contacts.scss&#10;is&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/states/_is.scss&#10;head&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/partials/header.jade&#10;base&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/base/_base.scss&#10;sett&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/util/_settings.scss&#10;se&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/base/_base.scss&#10;la&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/layout/_layout.scss&#10;nav&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/modules/_nav.scss&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/index.jade&#10;lay&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/layout/_layout.scss&#10;hero&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/modules/_hero.scss&#10;states&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style_old/partials/states/_states.scss&#10;mixi&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/util/_mixin.scss&#10;mix&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/style/util/_mixin.scss&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/proletarka/src/jade/index.jade&#10;article&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/modules/_article.scss&#10;mai&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/jade/partials/main-index.jade&#10;app&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/js/partials/app.js&#10;setting&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/util/_settings.scss&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_footer.scss&#10;baw&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/node_modules/easy-extender/node_modules/lodash/internal/baseWhile.js&#10;ar&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_article.scss&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/jade/partials/header-index.jade&#10;util&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/bower_components/foundation-sites/scss/util/_util.scss&#10;var&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/util/_var.scss&#10;ыуее&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/util/_settings.scss&#10;a&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/js/partials/app.js&#10;form&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_form.scss&#10;adress&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_adress-block.scss&#10;content&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_content-block.scss&#10;install node&#9;null&#9;null&#10;settings&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style_old/partials/_settings.scss&#10;modules&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_modules.scss&#10;modul&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/modules/_modules.scss&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/main.scss&#10;ut&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/_utilities.scss&#10;large&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/large.scss&#10;med&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/medium.scss&#10;small&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/small.scss&#10;main.js&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/js/main.js&#10;foundation-icons&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/foundation-icons.scss&#10;ma&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/main.scss&#10;_setting&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/_settings.scss&#10;larg&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/large.scss&#10;_settings&#9;FILE&#9;file:///Applications/MAMP/htdocs/Heritage/src/style/partials/_settings.scss&#10;gulp&#9;null&#9;null" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
@@ -516,11 +504,12 @@
       <workItem from="1472857088961" duration="3427000" />
       <workItem from="1472863801788" duration="9280000" />
       <workItem from="1472890188941" duration="9636000" />
+      <workItem from="1473115595771" duration="4211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101738000" />
+    <option name="totallyTimeSpent" value="105949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,15 +521,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="623" y="226" width="1188" height="773" extended-state="0" />
+    <frame x="0" y="83" width="1280" height="654" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.496875" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17932148" sideWeight="0.43786126" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19863014" sideWeight="0.478125" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12054794" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30272108" sideWeight="0.4838449" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30272108" sideWeight="0.51615506" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17813268" sideWeight="0.49787235" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22643098" sideWeight="0.6" order="0" side_tool="true" content_ui="combo" />
@@ -758,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="6" column="108" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,14 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jade/partials/header.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -843,18 +823,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jade/partials/main-index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/modules/_cards.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jade/partials/header.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jade/partials/main-index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding />
         </state>
       </provider>
