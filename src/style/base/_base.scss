@@ -82,27 +82,4 @@ dd {
   margin: 0;
 }
 
-input[type="text"],
-input[type="email"] {
-  padding: .5em 1em;
-  border: none;
-  border-bottom: 1px solid $primary-color;
-  background-color: $light-gray;
-  &:active, &:focus {
-    background-color: $white;
-  }
-}
 
-textarea {
-  padding: 10px 15px;
-  border: none;
-  border-bottom: 1px solid $primary-color;
-  background-color: $light-gray;
-  &:active, &:focus {
-    background-color: $white;
-  }
-}
-
-button {
-  outline: none;
-}

@@ -16,17 +16,17 @@
 // };
 
 $(document).ready(function(){
-    // add fixed property for top-nav on window sctoll down
-    $(window).scroll(function(){
-        var topNavPos = $('top-nav').scrollTop();
-        if (topNavPos > 200) {
-            $('top-nav').css({
-
-            });
-        } else {
-            $('top-nav').css({
-
-            });
-        }
-    })
+    // // add fixed property for top-nav on window sctoll down
+    // $(window).scroll(function(){
+    //     var topNavPos = $('top-nav').scrollTop();
+    //     if (topNavPos > 200) {
+    //         $('top-nav').css({
+    //
+    //         });
+    //     } else {
+    //         $('top-nav').css({
+    //
+    //         });
+    //     }
+    // })
 });

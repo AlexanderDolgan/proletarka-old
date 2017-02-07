@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="45017bdd-7489-4fd8-9dd4-92405768a57c" name="Proletarka" url="http://5704737.myjino.ru">
+        <fileTransfer host="5704737.myjino.ru" port="21" rootFolder="/domains/proletarka.spicedpages.ru">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

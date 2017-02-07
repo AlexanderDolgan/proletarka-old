@@ -1,22 +1,31 @@
 .cat-card {
+  @include span(1 of 1);
   position: relative;
   overflow: hidden;
   margin-bottom: gutter(12);
+  border: solid 5px $primary-color;
   &:last-child {
     margin-bottom: 0;
   }
-  height: 350px;
-  background-color: $white;
+  height: 10rem;
+  background-color: $primary-color;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    color: $primary-color;
+  }
+  transition: all .2s ease-in-out;
 }
 
 .cat-card__text {
-  & h2 {
-    color: $white;
+  & p:first-child {
+    font-size: 1.75rem;
+    font-family: $second-font-family;
+    margin: 0 auto;
   }
-  color: $white;
   position: absolute;
   margin: 0 2em;
-  top: 8em;
+  top: 1rem;
 }
 
 .cat-card__img {
@@ -27,7 +36,11 @@
 
 @include susy-breakpoint($b-medium) {
   .cat-card {
+    height: 21.875rem;
     @include gallery(6);
+  }
+  .cat-card__text {
+    top: 7rem;
   }
 }
 

@@ -15,8 +15,8 @@
   }
 }
 
-#site-main {
-
+#site-footer {
+  padding: 2.5em 0;
 }
 
 .container {
@@ -25,5 +25,15 @@
 }
 
 .l-card-holder {
+  padding: 2.5em 0;
+}
+
+.l-fidback {
   padding: 5em 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+
+.l-footer {
+  text-align: justify;
+  font-size: .8em;
 }

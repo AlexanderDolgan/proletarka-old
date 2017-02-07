@@ -1,25 +1,32 @@
 'use strict';
 
 var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    jade= require('gulp-jade'),
-    plumber = require('gulp-plumber'),
-    rigger = require('gulp-rigger'),
+    watch = require('gulp-watch'),           //Streaming
+
+    pug = require('gulp-pug'),               // Gulp plugin for compiling Pug templates (old jade)
+
     sass = require('gulp-sass'),
-    spritesmith = require('spritesmith'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
-    cleancss = require('gulp-clean-css'),
-    uglify = require('gulp-uglify'),
     prefixer = require('gulp-autoprefixer'),
+    cleancss = require('gulp-clean-css'),    //Minify css with clean-css.
+
+    uglify = require('gulp-uglify'),         //Minify files with UglifyJS.
     sourcemaps = require('gulp-sourcemaps'),
-    babel = require('gulp-babel'),
-    rimraf = require('rimraf'),
-    graceful = require('graceful-fs'),
-    gutil = require('gulp-util'),
-    browserSync = require("browser-sync"),
+
+    imagemin = require('gulp-imagemin'),      //Minify PNG, JPEG, GIF and SVG images
+    pngquant = require('imagemin-pngquant'),
+    svgSprite = require('gulp-svg-sprite'),  //Create SVG sprites with PNG fallbacks
+
+    rigger = require('gulp-rigger'),          //Rigger is a build time include engine for Javascript,
+                                              // CSS, CoffeeScript and in general any type of text file
+                                              // that you wish to might want to "include" other files into.
+    plumber = require('gulp-plumber'),        // Prevent pipe breaking caused by errors from gulp plugins
+    rimraf = require('rimraf'),               //The UNIX command rm -rf for node. - clean
+    gutil = require('gulp-util'),             //Utility functions for gulp plugins
+    concat = require('gulp-concat'),          //Concatenates files
+    filter = require("gulp-filter"),          //Filter files in a vinyl stream
+    rename = require('gulp-rename'),          //Rename files
+
+    browserSync = require("browser-sync"),//Live CSS Reload &amp; Browser Syncing
     reload = browserSync.reload;
 
 var path = {
@@ -27,17 +34,19 @@ var path = {
     build: {
         fonts: 'build/fonts/',
         img: 'build/img/',
+        icons: 'src/img/assets/icons/sprites',
         //html: 'build/',
-        jade: 'build/',
+        pug: 'build/',
         js: 'build/js/',
-        css: 'build/style',
+        css: 'build/style'
     },
     //source paths
     src: {
         fonts: 'src/fonts/**/*.*',
         img: 'src/img/**/*.*',
+        icons: 'src/img/assets/icons/*.*',
         //html: 'src/*.html',
-        jade: 'src/jade/*.jade',
+        pug: 'src/pug/*.pug',
         js: 'src/js/*.js',
         css: 'src/style/*.scss'
     },
@@ -45,8 +54,9 @@ var path = {
     watch: {
         fonts: 'src/fonts/**/*.*',
         img: 'src/img/**/*.*',
+        icons: 'src/img/assets/icons/*.*',
         //html: 'src/**/*.html',
-        jade: 'src/jade/**/*.jade',
+        pug: 'src/pug/**/*.pug',
         js: 'src/js/**/*.js',
         css: 'src/style/**/*.scss'
     },
@@ -71,12 +81,14 @@ function onError(err) {
     this.emit('end');
 }
 
-gulp.task('jade:build', function () {
-   gulp.src(path.src.jade)
-       .pipe(jade({pretty: true}))
-       .pipe(gulp.dest(path.build.jade))
-       .on('error', function(err) { gutil.log(err.message); })
-       .pipe(reload({stream: true}));
+gulp.task('pug:build', function () {
+    gulp.src(path.src.pug)
+        .pipe(pug({pretty: true}))
+        .pipe(gulp.dest(path.build.pug))
+        .on('error', function (err) {
+            gutil.log(err.message);
+        })
+        .pipe(reload({stream: true}));
 
 });
 
@@ -95,7 +107,9 @@ gulp.task('js:build', function () {
         .pipe(uglify())
         .pipe(sourcemaps.write('../js'))
         .pipe(gulp.dest(path.build.js))
-        .on('error', function(err) { gutil.log(err.message); })
+        .on('error', function (err) {
+            gutil.log(err.message);
+        })
         .pipe(reload({stream: true}));
 });
 
@@ -112,7 +126,9 @@ gulp.task('style:build', function () {
         .pipe(cleancss())
         .pipe(sourcemaps.write('../style'))
         .pipe(gulp.dest(path.build.css))
-        .on('error', function(err) { gutil.log(err.message); })
+        .on('error', function (err) {
+            gutil.log(err.message);
+        })
         .pipe(reload({stream: true}));
 });
 
@@ -128,6 +144,25 @@ gulp.task('image:build', function () {
         .pipe(reload({stream: true}));
 });
 
+
+// Config svg sprite
+var svgConfig = {
+    mode                    : {
+        inline              : true,     // Prepare for inline embedding
+        symbol              : true      // Create a «symbol» sprite
+    }
+};
+
+gulp.task('svgSprite:build', function () {
+    gulp.src('src/img/assets/icons/*.svg')
+        .pipe(svgSprite(svgConfig))
+        .pipe(gulp.dest('src/img/assets/'))
+        .on('error', function (err) {
+            gutil.log(err.message);
+        })
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('fonts:build', function () {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
@@ -135,19 +170,20 @@ gulp.task('fonts:build', function () {
 
 gulp.task('build', [
     //'html:build',
-    'jade:build',
+    'pug:build',
     'js:build',
     'style:build',
     'image:build',
-    'fonts:build'
+    'fonts:build',
+    'svgSprite:build'
 ]);
 
 gulp.task('watch', function () {
     //watch([path.watch.html], function (event, cb) {
     //    gulp.start('html:build');
     //});
-    watch([path.watch.jade], function (event, cb) {
-        gulp.start('jade:build');
+    watch([path.watch.pug], function (event, cb) {
+        gulp.start('pug:build');
     });
     watch([path.watch.css], function (event, cb) {
         gulp.start('style:build');
@@ -157,6 +193,9 @@ gulp.task('watch', function () {
     });
     watch([path.watch.img], function (event, cb) {
         gulp.start('image:build');
+    });
+    watch([path.watch.icons], function (event, cb) {
+        gulp.start('svgSprite:build');
     });
     watch([path.watch.fonts], function (event, cb) {
         gulp.start('fonts:build');

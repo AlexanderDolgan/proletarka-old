@@ -1,22 +1,6 @@
 .hero {
-  margin: 4em 0;
-}
-
-.hero__title {
-  position: relative;
-  text-align: center;
-  & h1 {
-    font-size: 5em;
-    margin: 0;
-    padding: 0;
-    color: $fifth-color;
-    font-weight: 700;
-  }
-  & h2 {
-    display: block;
-    margin: 0 auto;
-    width: span(5);
-    font-size: 1em;
-    color: $fifth-color;
+  padding: 5em 0;
+  &__img {
+    height: 8em;
   }
 }

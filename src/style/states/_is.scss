@@ -7,9 +7,6 @@
   display: block;
 }
 
-.is-text-white {
-  color: $white;
-}
 
 // content backgrounds
 
@@ -34,16 +31,19 @@
 }
 
 .is-light {
-  background-color: $fifth-color; //light bege
+  background-color: $fifth-color;
 }
 
 .is-dark {
-  background-color: $primary-color; //light bege
+  background-color: $primary-color;
 }
 
 .is-dark-grad {
-  background-image: linear-gradient(-45deg, rgb(252, 250, 237) 0%,
-          rgb(252, 250, 237) 10%, rgb(191, 57, 42) 10%, rgb(191, 57, 42) 90%, rgb(252, 250, 237) 90%, rgb(252, 250, 237) 100%);
+  background-color: $primary-color;
+}
+
+.is-hide {
+  display: none;
 }
 
 //text decorations
@@ -51,8 +51,23 @@
   font-weight: 700;
 }
 
+.is-text-white {
+  color: $white;
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+
+
 @include susy-breakpoint($b-medium, 12) {
   .is-black-trans {
     background-color: rgba(0, 0, 0, .65);
+  }
+
+  .is-dark-grad {
+    background-image: linear-gradient(-45deg, rgb(252, 250, 237) 0%,
+            rgb(252, 250, 237) 10%, rgb(191, 57, 42) 10%, rgb(191, 57, 42) 90%, rgb(252, 250, 237) 90%, rgb(252, 250, 237) 100%);
   }
 }

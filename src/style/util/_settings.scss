@@ -2,21 +2,21 @@
 
 //Global
 $global-font-family: 'Roboto', serif;
-$second-font-family: 'Open Sans', serif;
+$second-font-family: 'Merriweather', serif;
 $global-font-size: 110%;
 $global-line-height: 1.7;
 $font-smooth: antialiased;
 
 //Colors
 $brand-palette: (
-        primary: #BF382A,
+        primary: #cc3333,
         secondary: #683531,
         success: #3adb76,
         warning: #ffae00,
         alert: #ec5840
 );
 
-$third-color: #EF7079; // light red
+$third-color: #cc3333; // light red
 $fourth-color: #F7E8C3; //bege
 $fifth-color: #FCFAED; ///light bege
 $light-gray: #e6e6e6;
@@ -42,8 +42,8 @@ $b-xlarge: 90em;
 $b-xxlarge: 100em;
 
 $b-small-only: 0 47.9375em;
-$b-medium-only: 48em 74,9375em;
-$b-large-only: 75em 99,9375em;
+$b-medium-only: 48em 74, 9375em;
+$b-large-only: 75em 99, 9375em;
 
 //container width
 $container-width: $b-large;
@@ -57,3 +57,22 @@ $header-font-family: 'Merriweather', sans-serif;
 $header-font-weight: 400;
 $header-color: $body-font-color;
 $header-lineheight: 1.4;
+
+$header-sizes: (
+        small: (
+                'h1': 24,
+                'h2': 20,
+                'h3': 19,
+                'h4': 18,
+                'h5': 17,
+                'h6': 16,
+        ),
+        medium: (
+                'h1': 48,
+                'h2': 40,
+                'h3': 31,
+                'h4': 25,
+                'h5': 20,
+                'h6': 16,
+        ),
+)
