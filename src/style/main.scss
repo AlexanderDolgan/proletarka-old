@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-//import reset normalize.css
 @import "../../bower_components/normalize-scss/sass/normalize";
+
+@import "../../bower_components/juice/dist/juice";
 
 //settings-var
 @import "util/settings";

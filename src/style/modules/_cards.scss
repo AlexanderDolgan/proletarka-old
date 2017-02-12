@@ -3,13 +3,13 @@
   position: relative;
   overflow: hidden;
   margin-bottom: gutter(12);
-  border: solid 5px $primary-color;
+  border: solid rem-calc(5px) $light-gray;
   &:last-child {
     margin-bottom: 0;
   }
   height: 10rem;
-  background-color: $primary-color;
-  color: $white;
+  background-color: $light-gray;
+  color: $black;
   &:hover {
     background-color: $white;
     color: $primary-color;
@@ -37,7 +37,7 @@
 @include susy-breakpoint($b-medium) {
   .cat-card {
     height: 21.875rem;
-    @include gallery(6);
+    @include gallery(6 of 12);
   }
   .cat-card__text {
     top: 7rem;
@@ -46,6 +46,27 @@
 
 @include susy-breakpoint($b-large) {
   .cat-card {
-    @include gallery(4);
+    @include gallery(4 of 12);
   }
 }
+
+
+
+.gallery {
+  @include susy-clearfix;
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.gallery-item {
+  @include gallery (4 of 12);
+  height: 10rem;
+  background-color: green;
+}
+
+
+
+

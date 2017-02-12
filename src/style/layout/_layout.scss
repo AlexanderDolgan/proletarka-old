@@ -1,22 +1,18 @@
-#wrapper {
+.wrapper {
   @include container();
 }
 
 #site-header {
   position: relative;
-  & > .noise {
-    position: absolute;
-    width: 100%;
-    height: 90px;
-    background-image: url("../img/assets/noise-nav.png");
-    background-repeat: repeat-x;
-    background-position: top;
-    z-index: 1;
-  }
+  @include container($container-width);
+  height: rem-calc(680px);
+  background-image: url("../img/assets/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 #site-footer {
-  padding: 2.5em 0;
+  padding: 2.5rem 0;
 }
 
 .container {
@@ -25,11 +21,12 @@
 }
 
 .l-card-holder {
-  padding: 2.5em 0;
+  margin: 2.5rem 0;
+  @include container($container-width);
 }
 
 .l-fidback {
-  padding: 5em 0;
+  padding: 5rem 0;
   box-shadow: 2px 2px 5px rgba(0,0,0,.4);
 }
 

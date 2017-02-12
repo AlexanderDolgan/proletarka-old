@@ -3,17 +3,18 @@
 //Global
 $global-font-family: 'Roboto', serif;
 $second-font-family: 'Merriweather', serif;
-$global-font-size: 110%;
+$global-font-size: 16px;
 $global-line-height: 1.7;
 $font-smooth: antialiased;
 
 //Colors
 $brand-palette: (
-        primary: #cc3333,
+        primary: #CC3333,
+        primary-transparent: rgba(204,51,51,.9),
         secondary: #683531,
-        success: #3adb76,
-        warning: #ffae00,
-        alert: #ec5840
+        success: #3ADB76,
+        warning: #FFAE00,
+        alert: #EC5840
 );
 
 $third-color: #cc3333; // light red

@@ -145,23 +145,23 @@ gulp.task('image:build', function () {
 });
 
 
-// Config svg sprite
-var svgConfig = {
-    mode                    : {
-        inline              : true,     // Prepare for inline embedding
-        symbol              : true      // Create a «symbol» sprite
-    }
-};
+// // Config svg sprite
+// var svgConfig = {
+//     mode                    : {
+//         inline              : true,     // Prepare for inline embedding
+//         symbol              : true      // Create a «symbol» sprite
+//     }
+// };
 
-gulp.task('svgSprite:build', function () {
-    gulp.src('src/img/assets/icons/*.svg')
-        .pipe(svgSprite(svgConfig))
-        .pipe(gulp.dest('src/img/assets/'))
-        .on('error', function (err) {
-            gutil.log(err.message);
-        })
-        .pipe(reload({stream: true}));
-});
+// gulp.task('svgSprite:build', function () {
+//     gulp.src('src/img/assets/icons/*.svg')
+//         .pipe(svgSprite(svgConfig))
+//         .pipe(gulp.dest('src/img/assets/'))
+//         .on('error', function (err) {
+//             gutil.log(err.message);
+//         })
+//         .pipe(reload({stream: true}));
+// });
 
 gulp.task('fonts:build', function () {
     gulp.src(path.src.fonts)
@@ -174,8 +174,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'image:build',
-    'fonts:build',
-    'svgSprite:build'
+    'fonts:build'
+    // 'svgSprite:build'
 ]);
 
 gulp.task('watch', function () {
@@ -194,9 +194,9 @@ gulp.task('watch', function () {
     watch([path.watch.img], function (event, cb) {
         gulp.start('image:build');
     });
-    watch([path.watch.icons], function (event, cb) {
-        gulp.start('svgSprite:build');
-    });
+    // watch([path.watch.icons], function (event, cb) {
+    //     gulp.start('svgSprite:build');
+    // });
     watch([path.watch.fonts], function (event, cb) {
         gulp.start('fonts:build');
     });

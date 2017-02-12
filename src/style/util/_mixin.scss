@@ -3,6 +3,9 @@
   @if map-has-key($brand-palette, primary) {
     $primary-color: map-get($brand-palette, primary) !global;
   }
+  @if map-has-key($brand-palette, primary) {
+    $primary-transparent-color: map-get($brand-palette, primary-transparent) !global;
+  }
   @if map-has-key($brand-palette, secondary) {
     $secondary-color: map-get($brand-palette, secondary) !global;
   }

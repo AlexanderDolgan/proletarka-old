@@ -1,3 +1,49 @@
+.contacts {
+  @include span(7 last);
+  margin-top: 5rem;
+  & a {
+    color: $black;
+  }
+}
+
+.top-contacts {
+  & a {
+    line-height: 3;  
+    padding-right: 1rem;
+    padding-left: 2rem;
+  }
+  & .phone::before {
+    content: "";
+    display: inline-block;
+    width: rem-calc(13px);
+    height: rem-calc(10px);
+    margin-right: rem-calc(10px);
+    background-image: url("../img/assets/icons/phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+  }
+  & .email::before {
+    content: "";
+    display: inline-block;
+    width: rem-calc(13px);
+    height: rem-calc(10px);
+    margin-right: rem-calc(10px);
+    background-image: url("../img/assets/icons/envelop.svg");
+    background-repeat: no-repeat;
+
+  }
+  & .address::before {
+    content: "";
+    display: inline-block;
+    width: rem-calc(13px);
+    height: rem-calc(16px);
+    margin-right: rem-calc(10px);
+    background-image: url("../img/assets/icons/point.svg");
+    background-repeat: no-repeat;
+
+  }
+}
+
 .hor-contacts {
   text-align: center;
   line-height: 3.5;

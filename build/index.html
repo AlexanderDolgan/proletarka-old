@@ -8,105 +8,124 @@
     <link rel="stylesheet" href="style/main.min.css">
   </head>
   <body>
-    <div class="is-hide"><?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 14.2 10.5" id="envelope"><path d="M13.7-.5H.5C.2-.5 0-.3 0 0v.9c0 .1 0 .1.1.2l7 4h.2l6.8-4c-.1-.1 0-.1 0-.1l.1-.1V0c0-.3-.2-.5-.5-.5zM14.1 2.4H14l-3.8 2.3s-.1 0-.1.1v.1l3.9 4h.1l.1-.1V2.5c0-.1 0-.1-.1-.1zM9.1 5.4H9l-1.6.9c-.2.1-.4.1-.6 0l-1.3-.8h-.1L.3 10.3v.1s0 .1.1.1.2.1.2.1h13.1s.1 0 .1-.1v-.1l-4.7-5zM4.2 5c0-.1.1-.1 0 0v-.2l-4-2.3H.1c-.1 0-.1 0-.1.1v6s0 .1.1.1h.1l4-3.7z"/></symbol><symbol viewBox="0 0 14.2 11.7" id="phone"><path d="M13 9.2c0-.2-.1-.3-.3-.4l-2.4-1.4c-.1 0-.2-.1-.3-.1-.2 0-.4.1-.5.2l-.8.8s-.1.1-.2.1c0 0-.8-.1-2.3-1.6-1.5-1.5-1.6-2.4-1.6-2.4s0-.1.1-.2l.6-.6c.2-.2.3-.6.2-.8L4.1.3C4 .1 3.8 0 3.6 0c-.1 0-.3.1-.4.2L1.6 1.8c-.2.2-.3.4-.3.7 0 .1-.3 2.6 3.1 6.1 2.9 2.9 5.2 3.2 5.9 3.2h.2c.2 0 .5-.2.7-.3l1.6-1.6c.1-.3.2-.5.2-.7z"/></symbol><symbol viewBox="508.1 1122.9 9.8 14.2" id="point"><path fill="#231F20" d="M513 1130c-1.2 0-2.2-1-2.2-2.2s1-2.2 2.2-2.2c1.2 0 2.2 1 2.2 2.2s-1 2.2-2.2 2.2zm0-7.1c-2.7 0-4.9 2.2-4.9 4.9s4.9 9.3 4.9 9.3 4.9-6.6 4.9-9.3c0-2.7-2.2-4.9-4.9-4.9z"/></symbol></svg></div>
     <!--Site header-->
-    <header class="is-dark" id="site-header">
-      <div class="container">
-        <div class="hero"><img class="hero__img" src="../img/assets/logo.svg" alt="logo"></div>
+    <header id="site-header">
+      <div class="wrapper">
+        <div class="logo"><img class="main-logo" src="img/assets/logo.svg" alt="Пролетарка"><img class="sub-logo" src="img/assets/operativ-pechat.svg" alt="Оперативная печать"></div>
+        <div class="contacts">
+          <div class="top-contacts"><a href="tel:+79684335358"><i class="phone"></i> +7 (968) 433-53-58</a><a href="tel:+74951236553">+7 (495) 123-6553</br></a><a href="mailto:proletarka2004@yandex.ru"><i class="email"></i> proletarka2004@yandex.ru</a><a href="#"><i class="address"></i> ул. 1-я Дубровская, д.1,корп. 2</a></div>
+        </div>
       </div>
-      <div class="hor-contacts"><a href="#"><span> svg(viewBox="0 0 100 100" class="icon point")
-          <use xlink:href="#point"></span> ул. 1-я Дубровская, д. 1, корп. 2</use></a><a href="tel:+79684335358"><i class="phone"></i> +7 (495) 123-6553; +7 (968) 433-53-58</a><a href="mailto:proletarka2004@yandex.ru"><i class="email"></i> proletarka2004@yandex.ru</a>
-        <!--.hor-nav-->
-        <!--	each val in ['Печати','Штампы', 'Пломбиры', 'Визитки', 'Самокопирка', 'Открытки/Брошюры', 'Таблички']-->
-        <!--		a.hor-nav__link= val-->
-      </div>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#">Печати и Штампы</a></li>
+          <li><a href="#">Визитки</a></li>
+          <li><a href="#">Пломбиры и Пломбираторы</a></li>
+          <li><a href="#">Самокопирка</a></li>
+          <li><a href="#">Таблички</a></li>
+          <li><a href="#">Буклеты</a></li>
+          <li><a href="#">Открытки</a></li>
+          <li><a href="#">Доставка</a></li>
+        </ul>
+      </nav>
     </header>
     <!--Site main content-->
     <main id="site-main">
       <div class="l-card-holder">
-        <div class="container">
-          <!-- iteration cards / array with card name - discription - imgSrc - link to page-->
-          <!--print cards--><a class="cat-card" href="stamp.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Печати</p>
-                <p>Изготовление печатей и штампов из полимера и резины.</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Штампы</p>
-                <p>Изготовление штампов из полимера и резины.</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Визитки</p>
-                <p>Цифровая и офсетная печати, шелкография, тиснение, конгрев.</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Пломбиры</p>
-                <p>Гравировка на меттале</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Пломбираторы</p>
-                <p>Односторонние и двухсторонние</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Самокопирка</p>
-                <p>Двух и трехслойная, офсетная печать.</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Открытки и Брошюры</p>
-                <p>Изготовление от одной штуки.</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Таблички</p>
-                <p>Графировка на пластике, накатка на пластик.</p>
-              </div>
-            </div></a><a class="cat-card" href="undefined.html">
-            <div class="div">
-              <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
-              <div class="cat-card__text">
-                <p>Доставка</p>
-                <p>по Москве</p>
-              </div>
-            </div></a>
+        <!-- iteration cards / array with card name - discription - imgSrc - link to page-->
+        <!--print cards--><a class="cat-card" href="stamp.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Печати</p>
+              <p>Изготовление печатей и штампов из полимера и резины.</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Штампы</p>
+              <p>Изготовление штампов из полимера и резины.</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Визитки</p>
+              <p>Цифровая и офсетная печати, шелкография, тиснение, конгрев.</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Пломбиры</p>
+              <p>Гравировка на меттале</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Пломбираторы</p>
+              <p>Односторонние и двухсторонние</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Самокопирка</p>
+              <p>Двух и трехслойная, офсетная печать.</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Открытки и Брошюры</p>
+              <p>Изготовление от одной штуки.</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Таблички</p>
+              <p>Графировка на пластике, накатка на пластик.</p>
+            </div>
+          </div></a><a class="cat-card" href="undefined.html">
+          <div class="div">
+            <!--img.cat-card__img(src="../img/assets/" + catItem[2])-->
+            <div class="cat-card__text">
+              <p>Доставка</p>
+              <p>по Москве</p>
+            </div>
+          </div></a>
+        <div class="gallery">
+          <ul>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+            <li class="gallery-item"></li>
+          </ul>
         </div>
-      </div>
-      <div class="l-fidback is-white-bg">
-        <div class="container">
-          <!--feedback form-->
-          <form class="feedback-form">
-            <fieldset class="feedback-form__fieldset">
-              <legend class="feedback-form__legend">
-                <h1>Напишите нам</h1>
-              </legend>
-              <label class="feedback-form__label" for="email">Укажите ваш e-mail или телефон и мы с Вами свяжемся</label>
-              <input class="feedback-form__input" type="email" id="email" name="email">
-              <label class="feedback-form__label" for="userMessage">Ваше сообщение</label>
-              <textarea class="feedback-form__textarea" id="userMessage" name="bio"></textarea>
-              <button class="feedback-form__send-btn btn" type="submit">Отправить</button>
-            </fieldset>
-          </form>
+        <div class="l-fidback is-white-bg">
+          <div class="container">
+            <!--feedback form-->
+            <form class="feedback-form">
+              <fieldset class="feedback-form__fieldset">
+                <legend class="feedback-form__legend">
+                  <h1>Напишите нам</h1>
+                </legend>
+                <label class="feedback-form__label" for="email">Укажите ваш e-mail или телефон и мы с Вами свяжемся</label>
+                <input class="feedback-form__input" type="email" id="email" name="email">
+                <label class="feedback-form__label" for="userMessage">Ваше сообщение</label>
+                <textarea class="feedback-form__textarea" id="userMessage" name="bio"></textarea>
+                <button class="feedback-form__send-btn btn" type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </div>
       <!--End site main-->

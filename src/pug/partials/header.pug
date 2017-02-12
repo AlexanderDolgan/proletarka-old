@@ -1,14 +1,34 @@
 //Site header
-header#site-header.is-dark
-	.container
-		.hero
-				img(src="../img/assets/logo.svg" alt="logo").hero__img
-	.hor-contacts
-		a(href='#') <span> svg(viewBox="0 0 100 100" class="icon point")
-			use(xlink:href="#point") </span> ул. 1-я Дубровская, д. 1, корп. 2
+header#site-header
+	.wrapper
+		.logo
+			img.main-logo(src='img/assets/logo.svg' alt='Пролетарка')
+			img.sub-logo(src='img/assets/operativ-pechat.svg' alt='Оперативная печать')
 
-		a(href='tel:+79684335358') <i class="phone"></i> +7 (495) 123-6553; +7 (968) 433-53-58
-		a(href='mailto:proletarka2004@yandex.ru') <i class="email"></i> proletarka2004@yandex.ru
-		//.hor-nav
-		//	each val in ['Печати','Штампы', 'Пломбиры', 'Визитки', 'Самокопирка', 'Открытки/Брошюры', 'Таблички']
-		//		a.hor-nav__link= val
+		.contacts
+			.top-contacts
+				a(href='tel:+79684335358') <i class="phone"></i> +7 (968) 433-53-58
+
+				a(href='tel:+74951236553') +7 (495) 123-6553</br>
+				
+				a(href='mailto:proletarka2004@yandex.ru') <i class="email"></i> proletarka2004@yandex.ru
+
+				a(href='#') <i class="address"></i> ул. 1-я Дубровская, д.1,корп. 2
+	nav
+		ul.header-nav
+			li
+				a(href="#") Печати и Штампы
+			li
+				a(href="#") Визитки
+			li
+				a(href="#") Пломбиры и Пломбираторы
+			li
+				a(href="#") Самокопирка
+			li
+				a(href="#") Таблички
+			li
+				a(href="#") Буклеты
+			li
+				a(href="#") Открытки
+			li
+				a(href="#") Доставка

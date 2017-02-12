@@ -17,8 +17,6 @@
   ],
   "dependencies": {
     "jquery": "3.*",
-    "foundation-sites": "^6.2.3",
-    "modernizr": "~3.3.1",
     "motion-ui": "~1.2.2",
     "breakpoint-sass": "^2.7.0",
     "normalize-scss": "normalize.scss#^5.0.3"
