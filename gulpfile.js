@@ -123,7 +123,7 @@ gulp.task('style:build', function () {
             cascade: false
         }))
         .pipe(rename({suffix: '.min'}))
-        .pipe(cleancss())
+        // .pipe(cleancss({compatibility: 'ie8'}))
         .pipe(sourcemaps.write('../style'))
         .pipe(gulp.dest(path.build.css))
         .on('error', function (err) {

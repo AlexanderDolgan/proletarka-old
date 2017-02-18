@@ -1,3 +1,7 @@
+.container {
+  @include container($container-width);
+}
+
 .cat-card {
   @include span(1 of 1);
   position: relative;
@@ -48,23 +52,6 @@
   .cat-card {
     @include gallery(4 of 12);
   }
-}
-
-
-
-.gallery {
-  @include susy-clearfix;
-  & ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.gallery-item {
-  @include gallery (4 of 12);
-  height: 10rem;
-  background-color: green;
 }
 
 
