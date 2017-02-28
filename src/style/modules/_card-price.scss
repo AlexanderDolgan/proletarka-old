@@ -1,0 +1,49 @@
+.l-showcase {
+	& .header {
+		padding-left: 2rem;
+		font-family: $second-font-family;
+	}
+	& .content {
+		@include susy-clearfix();
+	}
+}
+
+.card-price {
+		width: 90%;
+		margin: 0 auto;
+		border-collapse: collapse;
+		border: 2px solid #F8F7F7;
+	& thead {
+		background-color: $primary-color;
+		& th {
+			color: white;
+			padding: 1rem;
+			font-size: rem-calc(18px);
+			font-weight: normal;
+		}
+	}
+	& .sub-header {
+		font-weight: bold;
+	}
+	& tr:nth-child(2n) {
+		background-color: #F8F7F7;
+		font-weight: bold;
+	}
+	& td {
+		text-align: center;
+		padding: .5rem;
+	}
+}
+
+@include susy-breakpoint($b-medium) {
+	.card-price {
+		@include span (4);
+		&:last-child {
+			@include span(4 last);
+		}
+	}
+	& .docs-link {
+		text-align: center;
+		line-height: 4;
+	}
+}

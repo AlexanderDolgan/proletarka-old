@@ -3,6 +3,10 @@
   display: none;
 }
 
+.is-bold {
+  font-weight: bold;
+}
+
 .is-show {
   display: block;
 }
@@ -59,6 +63,10 @@
   text-align: center;
 }
 
+.is-current {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 
 @include susy-breakpoint($b-medium, 12) {

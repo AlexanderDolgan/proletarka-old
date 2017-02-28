@@ -1,0 +1,16 @@
+.l-img-full {
+	display: none;
+  margin-top: 2.5rem;
+}
+
+@include susy-breakpoint($b-medium) {
+	.l-img-full {
+		display: block;
+		padding: 0 2rem;
+		& img {
+			margin-top: 1rem;
+		}
+	}
+}
+
+

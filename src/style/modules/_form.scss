@@ -1,57 +1,66 @@
 //Form
 fieldset {
-  border:none;
+	border:none;
 }
 
 input {
-  padding: 1em;
-  border: 1px solid $light-gray;
-  border-bottom: 1px solid $primary-color;
-  background-color: lighten($light-gray, 7% );
-  font-size: 1em;
-  &:active, &:focus {
-    background-color: $white;
-  }
+	padding: 1em;
+	border: 1px solid $light-gray;
+	border-bottom: 1px solid $primary-color;
+	background-color: lighten($light-gray, 7% );
+	font-size: 1em;
+	&:active, &:focus {
+		background-color: $white;
+	}
 }
 
 textarea {
-  padding: 10px 15px;
-  border: 1px solid $light-gray;
-  border-bottom: 1px solid $primary-color;
-  background-color: lighten($light-gray, 7% );
-  font-size: 1em;
-  &:active, &:focus {
-    background-color: $white;
-  }
+	padding: 10px 15px;
+	border: 1px solid $light-gray;
+	border-bottom: 1px solid $primary-color;
+	background-color: lighten($light-gray, 7% );
+	font-size: 1em;
+	&:active, &:focus {
+		background-color: $white;
+	}
 }
 
 button {
-  outline: none;
+	outline: none;
 }
 
 
 .feedback-form {
-  text-align: center;
-  &__legend {
-    margin: 1em;
-  }
-  &__label {
-    display: block;
-    margin: 1em;
-  }
-  &__input {
-    display: block;
-    margin: 0 auto;
-    width: span(4);
-  }
-  &__textarea{
-    display: block;
-    margin: 0 auto;
-    width: span(4);
-    min-height: 75px;
-  }
-  &__send-btn {
-    display: block;
-    margin: 1em auto;
-  }
+	text-align: center;
+	&__legend {
+		margin: 1em;
+	}
+	&__label {
+		display: block;
+		margin: 1em;
+	}
+	&__input {
+		display: block;
+		margin: 0 auto;
+	}
+	&__textarea{
+		display: block;
+		margin: 0 auto;
+		min-height: 75px;
+	}
+	&__send-btn {
+		display: block;
+		margin: 1em auto;
+	}
+}
+
+@include susy-breakpoint($b-medium) {
+	.feedback-form {
+		&__input {
+			width: span(4);
+		}
+		&__textarea{
+			width: span(4);
+		}
+	}
 }

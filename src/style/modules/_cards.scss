@@ -1,7 +1,4 @@
-.container {
-  @include container($container-width);
-}
-
+// index section cards
 .cat-card {
   @include span(1 of 1);
   position: relative;
@@ -53,6 +50,7 @@
     @include gallery(4 of 12);
   }
 }
+
 
 
 

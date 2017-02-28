@@ -1,52 +1,77 @@
 .header-nav {
-  list-style: none;
-  width: span(3.5);
-  margin-top: 2rem;
-  & li {
-    position: relative;
-  }
-  & li::before {
-    content: "•";
-    position: absolute;
-    color: $primary-color;
-    font-size: 2rem;
-    line-height: 1.4;
-  }
-  & li a {
-    display: block;
-    padding: rem-calc(9px) rem-calc(20px);
-    text-transform: uppercase;
-    background-color: $white;
-    color: $black;
-    &:hover {
-      background-color: $primary-color;
-      color: $white;
-      text-decoration: none;
-      padding-left: rem-calc(25px);
-      font-weight: bold;
-    }
-    transition: all .2s ease-in-out;
-  }
+	display: none;
 }
 
 .hor-nav {
-  text-align: center;
-  &__link {
-    font-family: $second-font-family;
-    display: inline-block;
-    font-weight: 700;
-    padding: 2em 1em 0 2em;
-    color: $fifth-color;
-    font-size: .9em;
-    &:hover,
-    &:active,
-    &:focus {
-      color: darken($fifth-color,3%);
-      text-decoration: underline;
-      cursor: pointer;
-    }
-    &:last-child {
-      padding-right: 0;
-    }
-  }
+	text-align: center;
+	&__link {
+		font-family: $second-font-family;
+		display: inline-block;
+		font-weight: 700;
+		padding: 2em 1em 0 2em;
+		color: $fifth-color;
+		font-size: .9em;
+		&:hover,
+		&:active,
+		&:focus {
+			color: darken($fifth-color,3%);
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+.underline {
+	& li {
+		position: relative;
+	}
+	& li a::after {
+		content: '';
+		height: 2px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		background: $primary-color;
+		transition: 0.2s;
+		margin-left: 10%;
+	}
+	& li a:hover::after {
+		width: 70%;
+	}
+}
+
+@include susy-breakpoint($b-medium) {
+	.header-nav {
+		display: block;
+		width: span(3.5);
+		list-style: none;
+		margin-top: 2rem;
+		& li {
+			position: relative;
+		}
+		& li::before {
+			content: "•";
+			position: absolute;
+			color: $dark-gray;
+			font-size: 2rem;
+			line-height: 1.4;
+		}
+		& li a {
+			display: block;
+			padding: rem-calc(9px) rem-calc(20px);
+			text-transform: uppercase;
+			background-color: $white;
+			color: $black;
+			&:hover {
+				text-decoration: none;
+				padding-left: rem-calc(25px);
+				font-weight: bold;
+			}
+			transition: all .2s ease-in-out;
+		}
+	}
 }

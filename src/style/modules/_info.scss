@@ -1,0 +1,52 @@
+.l-info {
+	& .name {
+		margin: 0 auto;
+		padding-top: 2rem;
+		width: span(9);
+	}
+	& .content {
+		margin-top: 3.5rem;
+		@include susy-clearfix();
+		& .is-bold {
+			font-size: 1.125rem;
+		}
+		& .content-text {
+			background-color: #F3F3F3;
+			padding: 1.5rem;
+		}
+		& .content-img {
+			border-width: rem-calc(24px);
+			border-color: #CDCDCD;
+			border-style: solid;
+			position: relative;
+			min-height: rem-calc(395px);
+			& img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: rem-calc(300px);
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@include susy-breakpoint($b-medium) {
+	.l-info {
+		& .name {
+			width: span(5);
+		}
+		& .content {
+			& .content-text {
+				@include span(6 inside);
+				padding: 2.5rem;
+				min-height: rem-calc(395px);
+			}
+			& .content-img {
+				@include span(6 last inside);
+			}
+		}
+	}
+}

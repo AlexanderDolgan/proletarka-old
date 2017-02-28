@@ -1,0 +1,27 @@
+.sub-nav {
+	position: relative;
+	margin: 0;
+	margin-left: 6.5rem;
+	padding: 0;
+	&::before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		width: 4rem;
+		height: 3rem;
+		margin-left: -4rem;
+		background-image: url('../img/assets/icons/breadcrumps.svg');
+		background-repeat: no-repeat;
+		background-position: bottom left;
+	}
+	& li {
+		display: inline-block;
+		color: $primary-color;
+		text-transform: uppercase;
+		& a {
+			display: inline-block;
+			padding: rem-calc(10px) rem-calc(15px);
+			text-decoration: none;
+		}
+	}
+}

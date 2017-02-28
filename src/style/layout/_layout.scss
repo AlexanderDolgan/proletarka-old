@@ -1,36 +1,70 @@
 .wrapper {
-  @include container();
+	@include container();
+	@include susy-clearfix();
 }
 
 #site-header {
-  position: relative;
-  @include container($container-width);
-  height: rem-calc(680px);
-  background-image: url("../img/assets/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
+	position: relative;
+	@include container();
+	@include susy-breakpoint($b-medium) {
+		height: rem-calc(680px);
+	}
 }
 
+@include susy-breakpoint($b-medium) {
+	.index-bg {
+		background-image: url("../img/assets/header-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom right;
+	}
+
+	.stamp-bg {
+		background-image: url("../img/assets/header-stamp-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom right; 
+	}
+}
 #site-footer {
-  padding: 2.5rem 0;
-}
-
-.container {
-  @include container($container-width);
-  @include susy-clearfix;
-}
-
-.l-card-holder {
-  margin: 2.5rem 0;
-  @include container($container-width);
-}
-
-.l-fidback {
-  padding: 5rem 0;
-  box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+	margin-top: 2.5rem;
 }
 
 .l-footer {
-  text-align: justify;
-  font-size: .8em;
+	@include container();
+	padding: 1rem;
+	text-align: justify;
+	font-size: .8em;
+}
+
+.container {
+	@include container();
+}
+
+.l-card-holder {
+	margin: 2.5rem 0;
+	@include container();
+}
+
+.l-info {
+	margin-top: 2.5rem;
+	@include container();
+}
+
+.l-sub-nav {
+	@include container();
+	margin-top: 2.5rem;
+}
+
+.l-fidback {
+	padding: 5rem 0;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+
+.l-showcase {
+	@include container();
+	margin-top: 2.5rem;
+}
+
+.l-img-full {
+	@include container();
+	margin-top: 2.5rem;
 }
