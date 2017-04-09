@@ -3,11 +3,14 @@
 		margin: 0 auto;
 		padding-top: 2rem;
 		width: span(9);
+		& img {
+			max-height: 2rem;
+		}
 	}
 	& .content {
 		margin-top: 3.5rem;
 		@include susy-clearfix();
-		& .is-bold {
+		& strong {
 			font-size: 1.125rem;
 		}
 		& .content-text {
@@ -34,17 +37,23 @@
 }
 
 @include susy-breakpoint($b-medium) {
+	html, body {
+		height: 100%;
+	}
 	.l-info {
 		& .name {
 			width: span(5);
 		}
 		& .content {
+			height: 100%;
 			& .content-text {
 				@include span(6 inside);
 				padding: 2.5rem;
+				height: 100%;
 				min-height: rem-calc(395px);
 			}
 			& .content-img {
+				height: 100%;
 				@include span(6 last inside);
 			}
 		}

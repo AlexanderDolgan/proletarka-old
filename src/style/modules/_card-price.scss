@@ -46,4 +46,9 @@
 		text-align: center;
 		line-height: 4;
 	}
+	.card-price-alone:last-child {
+		@include span(4);
+		float: none;
+		margin: 0 auto;
+	}
 }

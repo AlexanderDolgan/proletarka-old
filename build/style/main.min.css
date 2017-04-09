@@ -661,6 +661,8 @@ button {
   margin: 0 auto;
   padding-top: 2rem;
   width: 74.57627%; }
+  .l-info .name img {
+    max-height: 2rem; }
 
 .l-info .content {
   margin-top: 3.5rem; }
@@ -668,7 +670,7 @@ button {
     content: " ";
     display: block;
     clear: both; }
-  .l-info .content .is-bold {
+  .l-info .content strong {
     font-size: 1.125rem; }
   .l-info .content .content-text {
     background-color: #F3F3F3;
@@ -689,20 +691,26 @@ button {
       margin: 0 auto; }
 
 @media (min-width: 48em) {
+  html, body {
+    height: 100%; }
   .l-info .name {
     width: 40.67797%; }
-  .l-info .content .content-text {
-    width: 50%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-    padding: 2.5rem;
-    min-height: 24.6875rem; }
-  .l-info .content .content-img {
-    width: 50%;
-    float: right;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%; } }
+  .l-info .content {
+    height: 100%; }
+    .l-info .content .content-text {
+      width: 50%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      padding: 2.5rem;
+      height: 100%;
+      min-height: 24.6875rem; }
+    .l-info .content .content-img {
+      height: 100%;
+      width: 50%;
+      float: right;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%; } }
 
 .l-showcase .header {
   padding-left: 2rem;
@@ -745,7 +753,13 @@ button {
       margin-right: 0; }
   .docs-link {
     text-align: center;
-    line-height: 4; } }
+    line-height: 4; }
+  .card-price-alone:last-child {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    float: none;
+    margin: 0 auto; } }
 
 .l-img-full {
   display: none;
